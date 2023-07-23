@@ -27,7 +27,56 @@ Here's what your project entails:
         * Is there a trend over time by size?
 4.	Risk Assessment: Crime Analysis 
      * What are crime trends?
-        * 	Violent crime
+        * Violent crime
         * Property Crime
-5.	Recommendations: Based on our thorough analysis, provide well-founded recommendations to our client on which cities or areas are the most promising for real estate investment. Back your suggestions with concrete data-driven evidence to instill confidence in your findings.
+5.	Recommendations: Based on our thorough analysis, provide well-founded recommendations to our client on which cities or areas are the most promising for real estate investment. Back your suggestions with concrete data-driven evidence to instill confidence in your findings.  
+  
 
+
+# Data Sources 
+**target cities are a must:** will alter city list if gap in available data  
+**over time:** last 3 years? monthly?  
+**bonus:** across US to pull high/low for potential other places of interest to call out for client  
+
+0. Overall
+     * **Is there an API?** Stats about all US cities - real estate, relocation info, crime, house prices, schools, races, income, photos, sex offenders, maps, education, weather, home value estimator, recent sales, etc. https://www.city-data.com/ 
+1. Real Estate (property sales - qty & $)
+     * **API** Property Data API: https://www.attomdata.com/solutions/property-data-api/  
+     * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
+     * **API** Housing Prices: https://blog.data.nasdaq.com/api-for-housing-data  
+     * **API** Realtor API: http://realtor.com/
+2. Population (growth over time; specific economics?)
+     * **API** Census Population Estimates and Projections: https://www.census.gov/data/developers/data-sets/popest-popproj.html  
+     * **API** Census Migration Flows: https://www.census.gov/data/developers/data-sets/acs-migration-flows.html
+     * **API** FRED: https://pypi.org/project/fredapi/       
+3. Job Market (unemployment, top job types, bonus: job openings?)
+     * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
+     * ...  
+4. Tax Rates (Property vs. Income)  
+     * ...  
+     * ...  
+5. Crime Rates (Violent vs. Property)
+     * **API** Worldwide: https://www.crimeometer.com/crime-data-api 
+     * **data** Austin: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu 
+     * **data** San Francisco: https://datasf.org/opendata/
+     * **data** Denver: https://www.denvergov.org/opendata
+     * **data** Pittsburgh: https://pittsburghpa.gov/open-data/stories.html
+     * **data** Las Vegas: https://files.lasvegasnevada.gov/open-data/Open_Data_Guide_for_CLV__ODSC_Approved_.pdf  
+     * **data** Memphis: https://data.memphistn.gov/browse?limitTo=datasets  
+     * **data** New York: https://data.cityofnewyork.us/Public-Safety/NYC-crime/qb7u-rbmr
+     * **data** Chicago: https://data.cityofchicago.org/Public-Safety/Crimes-2022/9hwr-2zxp/data  
+     * ...
+6. Other potential
+     * Areas with populations of 65,000+. Covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. https://www.census.gov/data/developers/data-sets/acs-1year.html  
+     * High-level detailed tables tabulated on the 1-year microdata for geographies with populations of 20,000 or more. https://www.census.gov/data/developers/data-sets/ACS-supplemental-data.html 
+     * ChatGPT suggesting realtor:
+        * Zillow API: Zillow, a popular online real estate marketplace, offers APIs that provide access to property data, home values, rental information, and more.
+        * Realtor API: Realtor.com's API provides access to real estate listings, property details, photos, and local market trends.
+        * Redfin API: Redfin's API offers access to real estate listings, property details, and local market information, including home sale data and pricing trends.
+        * Trulia API: Trulia, another prominent online real estate platform, provides APIs that offer access to property data, neighborhood details, and local market trends.
+        * MLS (Multiple Listing Service) API: MLS APIs are offered by various local real estate boards and associations, providing access to real-time property listings, sales data, and more.
+        * Estated API: Estated provides APIs for property data, including property details, ownership information, and historical sales data.
+        * Walk Score API: Walk Score offers an API that provides walkability scores and neighborhood information to assess the accessibility and convenience of different locations.
+        * Attom Data Solutions API: Attom Data Solutions provides APIs that offer access to a wide range of real estate data, including property details, ownership information, mortgage data, and more.
+        * RentRange API: RentRange's API focuses on rental market data, including rental rates, vacancy rates, and rental market trends.
+        * Onboard Informatics API: Onboard Informatics provides APIs that offer access to various real estate data, including property details, neighborhood demographics, and local amenities                           
