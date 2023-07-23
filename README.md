@@ -52,9 +52,14 @@ Here's what your project entails:
 3. Job Market (unemployment, top job types, bonus: job openings?)
      * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
      * ...  
-4. Tax Rates (Property vs. Income)  
-     * ...  
-     * ...  
+4. Tax Rates (Property, Income?, Sales?)  
+     * ~~Avg 2023 State Property Taxes varies by source: https://www.rocketmortgage.com/learn/property-taxes-by-state, https://belonghome.com/blog/property-taxes-by-state, https://wallethub.com/edu/states-with-the-highest-and-lowest-property-taxes/11585, https://www.bankrate.com/real-estate/property-tax-by-state/#what-are~~
+     * **data** GitHub link for Tax Foundation data: https://github.com/TaxFoundation
+       * **data** 2023 State Tax Collections per Capita: https://taxfoundation.org/2023-state-tax-data/
+       * **data** 2023 Combined State + Local sales tax rates by state: https://taxfoundation.org/publications/state-and-local-sales-tax-rates/  
+       * **data** Property tax trend by state 2020-23: https://taxfoundation.org/ranking-property-taxes-2023/
+       * **data** 2023 Income tax rates by state: https://taxfoundation.org/state-income-tax-rates-2023/  
+     * **API** (free trial option) Nationwide Proprty Tax Reporting: https://dna.firstam.com/taxsource 
 5. Crime Rates (Violent vs. Property)
      * **API** Worldwide: https://www.crimeometer.com/crime-data-api 
      * **data** Austin: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu 
@@ -79,4 +84,5 @@ Here's what your project entails:
         * Walk Score API: Walk Score offers an API that provides walkability scores and neighborhood information to assess the accessibility and convenience of different locations.
         * Attom Data Solutions API: Attom Data Solutions provides APIs that offer access to a wide range of real estate data, including property details, ownership information, mortgage data, and more.
         * RentRange API: RentRange's API focuses on rental market data, including rental rates, vacancy rates, and rental market trends.
-        * Onboard Informatics API: Onboard Informatics provides APIs that offer access to various real estate data, including property details, neighborhood demographics, and local amenities                           
+        * Onboard Informatics API: Onboard Informatics provides APIs that offer access to various real estate data, including property details, neighborhood demographics, and local amenities       
+     * Report on Taxes across US (not per city): chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.lincolninst.edu/sites/default/files/pubfiles/50-state-property-tax-comparison-for-2016-full.pdf               
