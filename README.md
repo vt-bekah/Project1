@@ -4,6 +4,12 @@ This repository contains challenge files for Project #1 od the UT DAV Bootcamp
 # Project Proposal
 In this project, we'll be working as a data analyst for a prominent real estate investment firm. Our task is to conduct in-depth research and provide expert insights to a high-profile client who is looking to invest in residential properties.
 Our client wants to know which cities or regions have the highest potential for a profitable real estate investment.
+
+**Fleshing out the persona and minimum requirements**
+  * client situation: married couple at 50 with grown kids, investing remotely
+  * focus on starter homes: up to 1500 sq. ft., up to 3 BR
+  * minimum requirements: see population growth (not sure limit until see data availability), increase in housing prices per sq. ft.
+
 Here's what your project entails:
 1.	Data Collection: Utilize the Real Estate Data API to extract and aggregate a year's worth of comprehensive data on residential property sales, population growth, job market statistics, and other relevant factors for specific cities or areas of interest.
      * Target cities: Austin, New York, San Francisco, Pittsburgh, Chicago, Memphis, Denver, Las Vegas (depending on where we find adequate data)
@@ -25,7 +31,7 @@ Here's what your project entails:
         * How does income distribution compare?
      * Size of house (# of rooms or sq. footage – not sure what is available)
         * Is there a trend over time by size?
-4.	Risk Assessment: Crime Analysis 
+4.	Risk Assessment: Crime Analysis, Hazards (e.g natural disastors)
      * What are crime trends?
         * Violent crime
         * Property Crime
@@ -35,7 +41,7 @@ Here's what your project entails:
 
 # Data Sources 
 **target cities are a must:** will alter city list if gap in available data  
-**over time:** last 3 years? monthly?  
+**over time:** last 2-3 years? monthly?  
 **bonus:** across US to pull high/low for potential other places of interest to call out for client  
 
 0. Overall
@@ -51,7 +57,10 @@ Here's what your project entails:
      * **API** FRED: https://pypi.org/project/fredapi/       
 3. Job Market (unemployment, top job types, bonus: job openings?)
      * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
-     * ...  
+     * **data** 2019 unemployment rates of 50 largest cities: https://www.bls.gov/lau/lacilg19.htm  
+     * **API** US Bureau of Labor Statistics: https://www.bls.gov/developers/home.htm
+       * doc: pull (id) options: https://www.bls.gov/help/hlpforma.htm#LA
+       * doc: location codes: https://download.bls.gov/pub/time.series/la/la.area
 4. Tax Rates (Property, Income?, Sales?)  
      * ~~Avg 2023 State Property Taxes varies by source: https://www.rocketmortgage.com/learn/property-taxes-by-state, https://belonghome.com/blog/property-taxes-by-state, https://wallethub.com/edu/states-with-the-highest-and-lowest-property-taxes/11585, https://www.bankrate.com/real-estate/property-tax-by-state/#what-are~~
      * **data** GitHub link for Tax Foundation data: https://github.com/TaxFoundation
@@ -65,15 +74,18 @@ Here's what your project entails:
      * **data** Austin: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu 
      * **data** San Francisco: https://datasf.org/opendata/
      * **data** Denver: https://www.denvergov.org/opendata
-     * **data** Pittsburgh: https://pittsburghpa.gov/open-data/stories.html
-     * **data** Las Vegas: https://files.lasvegasnevada.gov/open-data/Open_Data_Guide_for_CLV__ODSC_Approved_.pdf  
+     * **Issue! data** Pittsburgh: https://pittsburghpa.gov/open-data/stories.html
+     * **Issue! data** Las Vegas: https://files.lasvegasnevada.gov/open-data/Open_Data_Guide_for_CLV__ODSC_Approved_.pdf  
      * **data** Memphis: https://data.memphistn.gov/browse?limitTo=datasets  
      * **data** New York: https://data.cityofnewyork.us/Public-Safety/NYC-crime/qb7u-rbmr
      * **data** Chicago: https://data.cityofchicago.org/Public-Safety/Crimes-2022/9hwr-2zxp/data  
      * ...
 6. Potentially add school district ratings
+     * **API** May not be able to get free API access https://www.greatschools.org/api/
      * ...
-7. Other potential
+7. Hazards?
+     * ...
+8. Other potential
      * Areas with populations of 65,000+. Covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. https://www.census.gov/data/developers/data-sets/acs-1year.html  
      * High-level detailed tables tabulated on the 1-year microdata for geographies with populations of 20,000 or more. https://www.census.gov/data/developers/data-sets/ACS-supplemental-data.html 
      * ChatGPT suggesting realtor:
