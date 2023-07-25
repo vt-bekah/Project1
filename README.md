@@ -73,6 +73,7 @@ Here's what your project entails:
      * ...
 6. Potentially add school district ratings
      * **API** Realtor API: https://www.realtor.com/
+     * **API** School District API: https://www.greatschools.org/
 7. Other potential
      * Areas with populations of 65,000+. Covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. https://www.census.gov/data/developers/data-sets/acs-1year.html  
      * High-level detailed tables tabulated on the 1-year microdata for geographies with populations of 20,000 or more. https://www.census.gov/data/developers/data-sets/ACS-supplemental-data.html 
