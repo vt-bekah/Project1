@@ -71,7 +71,9 @@ Here's what your project entails:
      * **data** New York: https://data.cityofnewyork.us/Public-Safety/NYC-crime/qb7u-rbmr
      * **data** Chicago: https://data.cityofchicago.org/Public-Safety/Crimes-2022/9hwr-2zxp/data  
      * ...
-6. Other potential
+6. Potentially add school district ratings
+     * ...
+7. Other potential
      * Areas with populations of 65,000+. Covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. https://www.census.gov/data/developers/data-sets/acs-1year.html  
      * High-level detailed tables tabulated on the 1-year microdata for geographies with populations of 20,000 or more. https://www.census.gov/data/developers/data-sets/ACS-supplemental-data.html 
      * ChatGPT suggesting realtor:
