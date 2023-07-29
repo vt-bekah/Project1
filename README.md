@@ -44,15 +44,34 @@ Our client wants to know which cities or regions have the highest potential for 
 ### Property... 
 (*Aaron* update header  add content)
 ### Potential for Profitability Growth
-(*Rebekah* add content)
+**Data**: Median Contract Rent (average rent), Median Gross Rent (average cost of rent and utilities combined), Median Home Value (average value of an owner-occupied home), Median Monthly Owner Costs (average monthly housing expense for a homeowner with a mortgage) available through the Census Pythoon API ([alias descriptions](https://github.com/datamade/census))
+ - Median Contract Rent was used to give a view of what our clients would pull in as income
+ - Median Monthly Owner Costs are interpreted to be mortgage and utilities combined. A compare between Median Gross Rent and Median Monthly Owner Costs serve as a proxy for evaluation growth rates of Rent Cost vs. Mortgage Costs. 
+ - Median Home Value was evaluated for growth over time to identify potential profitability of re-selling in the future.<br> 
+
+**Results:** 
+A single city does not stand out as top across all the views created. However, San Francisco consistently is the top consideration while other cities fluctiate in rankings. Chicago comes up positively in two of the three views. Denver also shows up positively in two of the three views, but not as strongly as Chicago.
+ - Austin and Chicago show the most growth in home value while Memphis and San Francisco are in the next grouping
+ - Chicago and San Francisco have the highest % change in rental values with Austin and Denver in the next group
+ - New York has the highest differential between gross rental cost growth and mortgage costs growth with San Francisco and Denver coming in the next grouping (i.e. rental costs outpacing mortage costs)
+
+2019-2020 Change in Rent by City | 2019-2020 Change in Monthly Costs & Home Value by City
+:-------------------------:|:-------------------------:
+All cities show growth in rental prices.| Most cities show rental costs outpacing mortgage costs while all show increased home values
+![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
+
 ### Schools...
 (*Tait & Dulce* update header  add content)
 ### Crime Rates
 (*Brannan* update header  add content)
 ### Job Market
-Data: Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm))
-Results:
+**Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm))<br>
+
+**Results:**
 Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities. ANOVA and T tests were completed to verify differences seen in the charts.
+ - Denver has statistically lower unemployment rate than Chicago, Memphis, New York while San Francisco is statistically lower than Denver.
+ - Colorado has statistically higher jop openings than Texas, Illinois, New York, and California, but not Tennessee
+
 2020-2022 Unemployment Rates by City | 2020-2022 Job Opening Rates by State
 :-------------------------:|:-------------------------:
 The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas.| The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.
