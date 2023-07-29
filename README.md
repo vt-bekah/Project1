@@ -1,45 +1,100 @@
-# Project1
-This repository contains challenge files for Project #1 od the UT DAV Bootcamp
-
-# Project Proposal
-In this project, we'll be working as a data analyst for a prominent real estate investment firm. Our task is to conduct in-depth research and provide expert insights to a high-profile client who is looking to invest in residential properties.
+# US Real Estate Investing
+In this project, we'll be working as a data analyst for a prominent real estate investment firm. Our task is to conduct research and provide expert insights to a high-profile client who is looking to invest in residential properties.
 Our client wants to know which cities or regions have the highest potential for a profitable real estate investment.
+> Client Persona:
+ - Couple in early 50s located in suburbia Tampa, FL with teo fully independent children
+ - Focus Areas:
+   - Starter Homes: up to 1500 sq. ft; up to 3 bedrooms; single family homes, townhomes, or condos
+   - Target Cities: Austin, Chicago, Denver, Memphis, New York, San Francisco
+ - Desired Evidence:
+   - City population and property values are growing
+   - Profitability: Rental costs outweigh mortgage / difference trending up
+   - Is the city attracting starter home families? school performance, low crime rates, positive job market
 
-**Fleshing out the persona and minimum requirements**
-  * client situation: married couple at 50 with grown kids, investing remotely
-  * focus on starter homes: up to 1500 sq. ft., up to 3 BR
-  * minimum requirements: see population growth (not sure limit until see data availability), increase in housing prices per sq. ft.
-
-Here's what your project entails:
-1.	Data Collection: Utilize the Real Estate Data API to extract and aggregate a year's worth of comprehensive data on residential property sales, population growth, job market statistics, and other relevant factors for specific cities or areas of interest.
-     * Target cities: Austin, New York, San Francisco, Pittsburgh, Chicago, Memphis, Denver, Las Vegas (depending on where we find adequate data)
-     * Residential property sales (ideally over time)
-     * Population growth
-     * Job market stats – unemployment, top job types
-     * Property Tax / State Income Tax
-     * Potentially include rental data
-2.	Market Trends: Analyze the data to identify cities or regions where property prices have been steadily increasing over the past year. Uncover hidden gems with untapped potential that could yield significant returns for your client.
-     * Are there any cities that stand out not included in target list?
-     * Within target list:
-        * Are property sales trending up or down (quantity and price)? Potentially include rental data
-        * How do property tax and state income tax compare?
-        * How does population growth compare?
-        * How does unemployment compare?
-        * What type of jobs are most common?
-3.	Demographic Analysis: Dig deeper into the demographic data provided by the API to understand the local population's preferences, buying behavior, and trends. Determine how these factors could impact future property values and demand.
-     * Income
-        * How does income distribution compare?
-     * Size of house (# of rooms or sq. footage – not sure what is available)
-        * Is there a trend over time by size?
-4.	Risk Assessment: Crime Analysis, Hazards (e.g natural disastors)
-     * What are crime trends?
-        * Violent crime
-        * Property Crime
-5.	Recommendations: Based on our thorough analysis, provide well-founded recommendations to our client on which cities or areas are the most promising for real estate investment. Back your suggestions with concrete data-driven evidence to instill confidence in your findings.  
-  
+## Key Questions Answered, Data Source, Notebook
+ - Population trends across target cities (Cory to update - be more specific than starter text; add more bullets if needed)
+   - Data Source(s):
+   - Notebook(s) / Author(s):
+ - Property value trends across target cities (Aaron to update - be more specific than starter text; add more bullets if needed)
+   - Data Source(s):
+   - Notebook(s) / Author(s):
+ - Are rental prices growing, if so where is best?
+   - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html
+   - Notebook(s) / Author(s): Rent_Pricing.ipynb / Rebekah Aldrich
+ - In which cities are rental costs  growing faster than mortgage costs (are there top cities)?
+   - Data Source(s):
+   - Notebook(s) / Author(s): Rent_Pricing.ipynb / Rebekah Aldrich
+ - In which cities are schools most performant? (Tait/Dulce to update - be more specific than starter text; add more bullets if needed)
+   - Data Source(s):
+   - Notebook(s) / Author(s):
+ - In which cities are crime rates lowest? (Brannan to update - be more specific than starter text; add more bullets if needed)
+   - Data Source(s):
+   - Notebook(s) / Author(s):
+ - In which cities is the job market most positive?
+   - Data Source(s): U.S. Bureau of Labor Statistics API: https://www.bls.gov/developers/home.htm
+   - Notebook(s) / Author(s): BLS_Employment_Data.ipynb / Rebekah Aldrich
 
 
-# Data Sources 
+## Recommendation Summary
+
+
+## Analysis...
+### Population
+(Cory update header add content)
+### Property... 
+(Aaron update header  add content)
+### Potential for Profitability Growth
+(Rebekah add content)
+### Schools...
+(Tait & Dulce update header  add content)
+### Crime Rates
+(Brannan update header  add content)
+### Job Market
+Data: Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm))
+Results:
+Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities.
+2020-2022 Unemployment Rates by City | 2020-2022 Job Opening Rates by State
+:-------------------------:|:-------------------------:
+The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas.| The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.
+![BLS: 2020-2022 Unemployment Rates](./output_data/UnemploymentRate.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/JobOpeningsTrend.png)
+
+
+## Getting Started
+### Prerequisites
+
+You must have Python 3, Anaconda, Conda and Pip installed
+
+```
+$ python3 --version
+Output: Python 3.10.11
+$ anaconda --version
+Output: anaconda Command line client (version 1.11.3)
+$ conda --verison
+Output: conda 23.5.0
+$ pip --verison
+Ouput: pip 23.1.2 from /Users/{#Username}/opt/anaconda3/lib/site-packages/pip (python 3.10)
+```
+
+### Cloning Repo, Installing Dependencies & Running Jupyter
+```
+$ git clone https://github.com/vt-bekah/Project1.git
+$ cd Project1
+$ jupyter lab
+```
+
+## Built With
+- [![Python 3.7.13](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)]([https://www.python.org/downloads/) - Programming Language
+- [![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/docs/#) - Data analysis library
+- [![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/) - Multi-dimensional array library
+- [![Conda](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)](https://docs.conda.io/en/latest/) - Package manager
+- [Matplotlib](https://hvplot.holoviz.org/) - Visualization library 
+- [Hvplot](https://hvplot.holoviz.org/) - Visualization library for Pandas-based plots
+- [Pathlib](https://plotly.com/python/) - Python module for paths
+- [Scipy](https://scipy.org/) - Python module for statistics
+
+
+
+# SECTION TO BE REMOVED AFTER THE ABOVE CONTAINS SOURCES :Data Sources 
 **target cities are a must:** will alter city list if gap in available data  
 **over time:** last 2-3 years? monthly?  
 **bonus:** across US to pull high/low for potential other places of interest to call out for client  
