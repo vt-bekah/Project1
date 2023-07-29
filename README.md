@@ -12,47 +12,47 @@ Our client wants to know which cities or regions have the highest potential for 
    - Is the city attracting starter home families? school performance, low crime rates, positive job market
 
 ## Key Questions Answered, Data Source, Notebook
- - Population trends across target cities (Cory to update - be more specific than starter text; add more bullets if needed)
+ - Population trends across target cities (*Cory* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
-   - Notebook(s) / Author(s):
- - Property value trends across target cities (Aaron to update - be more specific than starter text; add more bullets if needed)
+   - Notebook(s) / Contributor(s):
+ - Property value trends across target cities (*Aaron* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
-   - Notebook(s) / Author(s):
+   - Notebook(s) / Contributor(s):
  - Are rental prices growing, if so where is best?
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html
-   - Notebook(s) / Author(s): Rent_Pricing.ipynb / Rebekah Aldrich
+   - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
  - In which cities are rental costs  growing faster than mortgage costs (are there top cities)?
+   - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html 
+   - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
+ - In which cities are schools most performant? (*Tait/Dulce* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
-   - Notebook(s) / Author(s): Rent_Pricing.ipynb / Rebekah Aldrich
- - In which cities are schools most performant? (Tait/Dulce to update - be more specific than starter text; add more bullets if needed)
+   - Notebook(s) / Contributor(s):
+ - In which cities are crime rates lowest? (*Brannan* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
-   - Notebook(s) / Author(s):
- - In which cities are crime rates lowest? (Brannan to update - be more specific than starter text; add more bullets if needed)
-   - Data Source(s):
-   - Notebook(s) / Author(s):
+   - Notebook(s) / Contributor(s):
  - In which cities is the job market most positive?
    - Data Source(s): U.S. Bureau of Labor Statistics API: https://www.bls.gov/developers/home.htm
-   - Notebook(s) / Author(s): BLS_Employment_Data.ipynb / Rebekah Aldrich
+   - Notebook(s) / Contributor(s): BLS_Employment_Data.ipynb / Rebekah Aldrich
 
 
 ## Recommendation Summary
+(Group to fill in)
 
-
-## Analysis...
+## Analysis
 ### Population
-(Cory update header add content)
+(*Cory* update header add content)
 ### Property... 
-(Aaron update header  add content)
+(*Aaron* update header  add content)
 ### Potential for Profitability Growth
-(Rebekah add content)
+(*Rebekah* add content)
 ### Schools...
-(Tait & Dulce update header  add content)
+(*Tait & Dulce* update header  add content)
 ### Crime Rates
-(Brannan update header  add content)
+(*Brannan* update header  add content)
 ### Job Market
 Data: Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm))
 Results:
-Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities.
+Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities. ANOVA and T tests were completed to verify differences seen in the charts.
 2020-2022 Unemployment Rates by City | 2020-2022 Job Opening Rates by State
 :-------------------------:|:-------------------------:
 The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas.| The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.
