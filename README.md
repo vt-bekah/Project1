@@ -69,7 +69,7 @@ All cities show growth in rental prices.| Most cities show rental costs outpacin
 ### Schools...
 (*Tait & Dulce* update header  add content)
 
-![BLS: 2019-2021 Graduation Rate Percentages](./output_data/StudentGradRate.png)
+![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
 (*Brannan* update header  add content)
