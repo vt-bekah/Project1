@@ -25,12 +25,13 @@ Our client wants to know which cities or regions have the highest potential for 
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html 
    - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
  - In which cities are schools most performant? (*Tait/Dulce* to update - be more specific than starter text; add more bullets if needed)
-   - Data Source(s): Austin: https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout
-                     Chicago: https://www.illinoisreportcard.com/district.aspx?source=trends&source2=graduationrate&Districtid=15016299025
-                     Denver: https://www.cde.state.co.us/cdereval/gradratecurrent
-                     Memphis: https://www.publicschoolreview.com/tennessee/shelby-county-school-district/4700148-school-district
-                     New York City: https://infohub.nyced.org/reports/academics/graduation-results
-                     San Francisco: https://www.cde.ca.gov/nr/ne/yr20/yr20rel101.asp
+   - Data Source(s): 
+        Austin: https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout
+        Chicago: https://www.illinoisreportcard.com/district.aspx?source=trends&source2=graduationrate&Districtid=15016299025
+        Denver: https://www.cde.state.co.us/cdereval/gradratecurrent
+        Memphis: https://www.publicschoolreview.com/tennessee/shelby-county-school-district/4700148-school-district
+        New York City: https://infohub.nyced.org/reports/academics/graduation-results
+        San Francisco: https://www.cde.ca.gov/nr/ne/yr20/yr20rel101.asp
    - Notebook(s) / Contributor(s): School_Grad_Data.ipynb / Tait Ralston & Dulce Silva
  - In which cities are crime rates lowest? (*Brannan* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
