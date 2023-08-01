@@ -11,7 +11,7 @@ Our client wants to know which cities or regions have the highest potential for 
    - Profitability: Rental costs outweigh mortgage / difference trending up
    - Is the city attracting starter home families? school performance, low crime rates, positive job market
 
-## Key Questions Answered, Data Source, Notebook
+## Key Questions, Answered, Data Source, Notebook
  - Population trends across target cities (*Cory* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
    - Notebook(s) / Contributor(s):
@@ -24,7 +24,7 @@ Our client wants to know which cities or regions have the highest potential for 
  - In which cities are rental costs  growing faster than mortgage costs (are there top cities)?
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html 
    - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
- - In which cities are schools most performant?
+ - In which cities are schools most performant? 
    - Data Source(s): 
         Austin: https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout
         Chicago: https://www.illinoisreportcard.com/district.aspx?source=trends&source2=graduationrate&Districtid=15016299025
@@ -42,7 +42,27 @@ Our client wants to know which cities or regions have the highest potential for 
 
 
 ## Recommendation Summary
-(Group to fill in)
+Denver, Colorado is consistently in top consideration across categories whereas other target cities fluctuate more within rankings by category. 
+Denver Highlights:
+ - Key Factors:
+   - 3rd in population growth
+   - 3rd in potential profitability (rental prices outpacing ownership prices)
+   - ??? housing market trends
+ - Other Considerations for city attractiveness:
+    - 1st in job market outlook (combined unemployment and job openings)
+    - 2nd in graduation rates
+    - MAYBE lowest in crime rates
+
+**Next Steps**
+ - With reduced city list, further dig into city vs. suburb (zip codes), specific schools
+ - Clarify profitability
+    - mortgage + management + property tax costs vs. rental prices
+    - average time to re-coup investment
+    - long term vs. short term rentals
+ - Clarify attractiveness
+    - focus on property crime rates
+    - school performance on standardized tests
+
 
 ## Analysis
 ### Population
@@ -57,17 +77,16 @@ Our client wants to know which cities or regions have the highest potential for 
 
 **Results:** 
 A single city does not stand out as top across all the views created. However, San Francisco consistently is the top consideration while other cities fluctiate in rankings. Chicago comes up positively in two of the three views. Denver also shows up positively in two of the three views, but not as strongly as Chicago.
- - Austin and Chicago show the most growth in home value while Memphis and San Francisco are in the next grouping
- - Chicago and San Francisco have the highest % change in rental values with Austin and Denver in the next group
- - New York has the highest differential between gross rental cost growth and mortgage costs growth with San Francisco and Denver coming in the next grouping (i.e. rental costs outpacing mortage costs)
+
+Austin and Chicago show the most growth in home value while Memphis and San Francisco are in the next grouping.
 
 2019-2020 Change in Rent by City | 2019-2020 Change in Monthly Costs & Home Value by City
 :-------------------------:|:-------------------------:
-All cities show growth in rental prices.| Most cities show rental costs outpacing mortgage costs while all show increased home values
+Chicago and San Francisco have the highest % change in rental values with Austin and Denver in the next group. | New York has the highest differential between gross rental cost growth and mortgage costs growth with San Francisco and Denver coming in the next grouping (i.e. rental costs outpacing mortage costs). 
 ![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
 
 ### Comparison of School Graduation Rate Percentages by City
-**Data** Individual state websites and resources, can be reference above in the 'Data Source" section.
+**Data** Graduation reates were used because... We consider this less accurate than other measures such as comparing performance on standardized tests.
 
 **Results**
 As seen in the data, Austin schools have the best graduation rate percentages, followed by Denver schools.
@@ -80,16 +99,14 @@ As seen in the data, Austin schools have the best graduation rate percentages, f
 ### Crime Rates
 (*Brannan* update header  add content)
 ### Job Market
-**Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm))<br>
+**Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm)). The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas. The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.<br>
 
 **Results:**
-Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities. ANOVA and T tests were completed to verify differences seen in the charts.
- - Denver has statistically lower unemployment rate than Chicago, Memphis, New York while San Francisco is statistically lower than Denver.
- - Colorado has statistically higher jop openings than Texas, Illinois, New York, and California, but not Tennessee
+Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities. ANOVA and T tests were completed to verify differences seen within the charts.
 
 2020-2022 Unemployment Rates by City | 2020-2022 Job Opening Rates by State
 :-------------------------:|:-------------------------:
-The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas.| The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.
+Colorado & Tenneesee have statistically higher jop openings than Texas, Illinois, New York, and California. Colorado shows the most growth (higher regression slope). Texas comes in third for job openings rate.| Denver, Austin, and San Francisco have statistically lower unemployment rates than Chicago, Memphis, New York; San Francisco is statistically lower than Denver and Austin while Denver and Austin are on the edge of statistical difference.
 ![BLS: 2020-2022 Unemployment Rates](./output_data/UnemploymentRate.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/JobOpeningsTrend.png)
 
 
