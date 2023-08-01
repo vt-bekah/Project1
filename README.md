@@ -24,7 +24,7 @@ Our client wants to know which cities or regions have the highest potential for 
  - In which cities are rental costs  growing faster than mortgage costs (are there top cities)?
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html 
    - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
- - In which cities are schools most performant? (*Tait/Dulce* to update - be more specific than starter text; add more bullets if needed)
+ - In which cities are schools most performant?
    - Data Source(s): 
         Austin: https://tea.texas.gov/reports-and-data/school-performance/accountability-research/completion-graduation-and-dropout
         Chicago: https://www.illinoisreportcard.com/district.aspx?source=trends&source2=graduationrate&Districtid=15016299025
