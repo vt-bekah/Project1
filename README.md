@@ -13,7 +13,7 @@ Our client wants to know which cities or regions have the highest potential for 
 
 ## Key Questions, Answered, Data Source, Notebook
  - Population trends across target cities (*Cory* to update - be more specific than starter text; add more bullets if needed)
-   - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html
+   - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html, Census Data Wrapper: https://pypi.org/project/census/
    - Notebook(s) / Contributor(s): full_population_analysis.ipynb / Cory Selzer
  - Property value trends across target cities (*Aaron* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s):
