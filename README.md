@@ -66,7 +66,7 @@ A single city does not stand out as top across all the views created. However, S
 All cities show growth in rental prices.| Most cities show rental costs outpacing mortgage costs while all show increased home values
 ![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
 
-### Schools...
+### Comparison of School Graduation Rate Percentages by City
 **Data** Individual state websites and resources, can be reference above in the 'Data Source" section.
 
 **Results**
