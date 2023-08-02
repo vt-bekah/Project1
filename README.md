@@ -67,6 +67,7 @@ Denver Highlights:
 ## Analysis
 ### Population
 (*Cory* update header add content)
+![BLS: 2019-2021 Population Growth Rates](./output_data/Full_Popluation_Growth.png)
 ### Property... 
 (*Aaron* update header  add content)
 ### Potential for Profitability Growth
