@@ -17,6 +17,8 @@ Our client wants to know which cities or regions have the highest potential for 
    - Notebook(s) / Contributor(s): full_population_analysis.ipynb / Cory Selzer
  - Sales trends across target cities 
    - Data Source(s):https://www.attomdata.com/
+   - Getting an api_key for Attom got to: https://api.developer.attomdata.com/signup
+Create and account, for company I put UofT Bootcamp and for industry put other. 
    - Notebook(s) / Contributor(s):sales_trend.ipynb / Aaron Summers & Rebekah Aldrich
    - Houses Available
    - Data Source(s):https://www.attomdata.com/
@@ -83,11 +85,12 @@ As shown in the charts, the New York City urbanized area grew the most in terms 
  - Chicago and Denver showed the second and third most growth respectively, with each city almost reaching 1% growth.
  - Memphis is the only city that showed a population decrease.
 
-![BLS: 2019-2021 Population Growth Rates](./output_data/Full_Popluation_Growth.png)
+![BLS: Sales Date vs Price (per Million)](./output_data/Full_Popluation_Growth.png)
 ### Property... 
 **Data**: We looked into the sales trends and houses avaliable with these parameters for both,1-3 bedrooms, square foot max of 1500 sq. ft, and are zoned residential. Sales trends captured sales in a range from 1/1/2020-12/31/2022 with the other given parameters above.
 House data looked at house in those 6 cities within our parameters and told us at this time no houses are available.
 **Results**: Overall the code does what it is programed to do looking through the data with these parameters( 1-3 bedrooms, square foot max of 1500 sq. ft, and are zoned residential) but I think with us looking at zip codes for city’s most of which are urban areas it limits the results with our given parameters.
+![BLS: ](./output_data/Price (per Million).png)
 ### Potential for Profitability Growth
 **Data**: Median Contract Rent (average rent), Median Gross Rent (average cost of rent and utilities combined), Median Home Value (average value of an owner-occupied home), Median Monthly Owner Costs (average monthly housing expense for a homeowner with a mortgage) available through the Census Pythoon API ([alias descriptions](https://github.com/datamade/census))
  - Median Contract Rent was used to give a view of what our clients would pull in as income
