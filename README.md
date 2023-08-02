@@ -100,16 +100,18 @@ Chicago and San Francisco have the highest % change in rental values with Austin
 ![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
 
 ### Comparison of School Graduation Rate Percentages by City
-**Data** Graduation rates were used because... We consider this less accurate than other measures such as comparing performance on standardized tests.
+**Data** Graduation rates were used because we were able to acquire free school rating data that would be utilized on websites like Zillow, RedFin, etc. However, this data may be considered less accurate than other measures such as comparing performance on standardized tests. For the sake of this project and time, we utilimately decided on school graduation rate percentages.
 
 **Results**
 As seen in the data, Austin schools have the best graduation rate percentages, followed by Denver schools.
- - The middle 50% of Austin schools have a graduation rate between 92.1 and 97.5.
- - The middle 50% of Denver schools have a graduation rate between 76.2 and 91.2.
  - Austin shows the highest percentages over the 3 years which would make it the top choice in terms of schools in our investment search.
  - Overall, it is good to see all the cities we are evaluating have promising statistics in terms graduation rate percentages.
  - In the graph, San Francisco schools show the greatest improvement in graduation rate percentage over the 3 years analyzed compared to the other cities which were relatively static.
 
+**Austin** - *Mean of Graduation Rates:* 90.47 | **Denver** - *Mean of Graduation Rates:* 83.96
+**Austin** - *Median of Graduation Rates:* 95.1 | **Denver** - *Median of Graduation Rates:* 87.9
+**Austin** - *Standard Deviation of Graduation Rates:* 15.61 | **Denver** - *Standard Deviation of Graduation Rates:* 12.47
+**Austin** - *Standard Error of Graduation Rates:* 1.40 | **Denver** - *Standard Error of Graduation Rates:* 2.32
 ![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
