@@ -108,11 +108,12 @@ As seen in the data, Austin schools have the best graduation rate percentages, f
  - Overall, it is good to see all the cities we are evaluating have promising statistics in terms graduation rate percentages.
  - In the graph, San Francisco schools show the greatest improvement in graduation rate percentage over the 3 years analyzed compared to the other cities which were relatively static.
 
+Austin Graduation Rates Stats | Denver Graduation Rate Stats
 :-------------------------:|:-------------------------:
-**Austin** - *Mean of Graduation Rates:* 90.47 | **Denver** - *Mean of Graduation Rates:* 83.96
-**Austin** - *Median of Graduation Rates:* 95.1 | **Denver** - *Median of Graduation Rates:* 87.9
-**Austin** - *Standard Deviation of Graduation Rates:* 15.61 | **Denver** - *Standard Deviation of Graduation Rates:* 12.47
-**Austin** - *Standard Error of Graduation Rates:* 1.40 | **Denver** - *Standard Error of Graduation Rates:* 2.32
+*Mean of Graduation Rates:* 90.47 | *Mean of Graduation Rates:* 83.96
+*Median of Graduation Rates:* 95.1 | *Median of Graduation Rates:* 87.9
+*Standard Deviation of Graduation Rates:* 15.61 | *Standard Deviation of Graduation Rates:* 12.47
+*Standard Error of Graduation Rates:* 1.40 | *Standard Error of Graduation Rates:* 2.32
 ![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
