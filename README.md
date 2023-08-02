@@ -33,9 +33,16 @@ Our client wants to know which cities or regions have the highest potential for 
         New York City: https://infohub.nyced.org/reports/academics/graduation-results
         San Francisco: https://www.cde.ca.gov/nr/ne/yr20/yr20rel101.asp
    - Notebook(s) / Contributor(s): School_Grad_Data.ipynb / Tait Ralston & Dulce Silva
- - In which cities are crime rates lowest? (*Brannan* to update - be more specific than starter text; add more bullets if needed)
-   - Data Source(s):
-   - Notebook(s) / Contributor(s):
+ - In which cities are crime rates lowest?
+   - Data Source(s): 
+        Austin: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
+        Chicago: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/data
+        Denver: https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-crime
+        Memphis: https://data.memphistn.gov/Public-Safety/Memphis-Police-Department-Aggregate-Crime/n7ue-iwew
+        New York City: https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u
+        San Francisco: https://data.sfgov.org/browse?category=Public+Safety
+   - Notebook(s) / Contributor(s): crime-data.ipynb / Brannan Geshwind
+   - NOTE: When using Jupyter Lab notebook for crime data, please use the following link to download the .csv files, as the filesizes exceed the Git repository file size limit. https://drive.google.com/drive/folders/1YZleML3H3upn3kOD3Mp36WhDErgkZV_C?usp=drive_link
  - In which cities is the job market most positive?
    - Data Source(s): U.S. Bureau of Labor Statistics API: https://www.bls.gov/developers/home.htm
    - Notebook(s) / Contributor(s): BLS_Employment_Data.ipynb / Rebekah Aldrich
@@ -104,7 +111,8 @@ As seen in the data, Austin schools have the best graduation rate percentages, f
 ![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
-(*Brannan* update header  add content)
+From the information gathered from each cities respective files, Denver currently is showing to be the lowest in terms of total crime in the cities for the years between 2020-2022. However, the amount of crime is shown to be increasing over that three year span. Austin, the next city with the lowest amount of crime, is trending downwards for the total amount. This shows true with Total Crime Rate as well. In conclusion, Denver, followed by Austin and Memphis, are the lowest in terms of Total Crimes per 100,000 people. However, of the three cities listed prior, Austin is the only city trending downward in terms of total crime and crime rate.
+
 ### Job Market
 **Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm)). The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas. The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.<br>
 
