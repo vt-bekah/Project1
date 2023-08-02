@@ -66,7 +66,13 @@ Denver Highlights:
 
 ## Analysis
 ### Population
-(*Cory* update header add content)
+**Data**: Population Growth Rate for each individual year (2019-2020 and 2020-2021) as well as net Population Growth Rate from 2019-2021.
+
+**Results**: 
+As shown in the charts, the New York City urbanized area grew the most in terms of population rate, with greater than 3.7% growth.  
+ - Chicago and Denver showed the second and third most growth respectively, with each city almost reaching 1% growth.
+ - Memphis is the only city that showed a population decrease.
+
 ![BLS: 2019-2021 Population Growth Rates](./output_data/Full_Popluation_Growth.png)
 ### Property... 
 (*Aaron* update header  add content)
