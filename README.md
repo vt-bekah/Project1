@@ -63,7 +63,7 @@ Denver Highlights:
  - Other Considerations for city attractiveness:
     - 1st in job market outlook (combined unemployment and job openings)
     - 2nd in graduation rates
-    - MAYBE lowest in crime rates
+    - Lowest amount of crime
 
 **Next Steps**
  - With reduced city list, further dig into city vs. suburb (zip codes), specific schools
@@ -127,7 +127,12 @@ Austin Graduation Rates Stats | Denver Graduation Rates Stats
 ![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
-From the information gathered from each cities respective files, Denver currently is showing to be the lowest in terms of total crime in the cities for the years between 2020-2022. However, the amount of crime is shown to be increasing over that three year span. Austin, the next city with the lowest amount of crime, is trending downwards for the total amount. This shows true with Total Crime Rate as well. In conclusion, Denver, followed by Austin and Memphis, are the lowest in terms of Total Crimes per 100,000 people. However, of the three cities listed prior, Austin is the only city trending downward in terms of total crime and crime rate.
+**Data**:From the information gathered from each cities respective files from official city resources. The data includes dates, times, and descriptions of crimes, amongst other information. As each city and state is different, each .csv file had empty spaces as well as information that wasn't included in other cities, such as beats in NYC.
+
+**Results**:In conclusion, Denver, followed by Austin and Memphis, are the lowest in terms of Total Crimes. Denver is the lowest amount of crime, but is increasing year after year. It is still the lowest of all of the cities. Chicago and New York City showed to be the highest amounts, with Chicago taking the top spot.
+
+![BLS:](./output_data/totalcrimebarchart.png)
+
 
 ### Job Market
 **Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm)). The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas. The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.<br>
