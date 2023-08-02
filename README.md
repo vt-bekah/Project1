@@ -100,10 +100,12 @@ Chicago and San Francisco have the highest % change in rental values with Austin
 ![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
 
 ### Comparison of School Graduation Rate Percentages by City
-**Data** Graduation reates were used because... We consider this less accurate than other measures such as comparing performance on standardized tests.
+**Data** Graduation rates were used because... We consider this less accurate than other measures such as comparing performance on standardized tests.
 
 **Results**
 As seen in the data, Austin schools have the best graduation rate percentages, followed by Denver schools.
+ - The middle 50% of Austin schools have a graduation rate between 92.1 and 97.5.
+ - The middle 50% of Denver schools have a graduation rate between 76.2 and 91.2.
  - Austin shows the highest percentages over the 3 years which would make it the top choice in terms of schools in our investment search.
  - Overall, it is good to see all the cities we are evaluating have promising statistics in terms graduation rate percentages.
  - In the graph, San Francisco schools show the greatest improvement in graduation rate percentage over the 3 years analyzed compared to the other cities which were relatively static.
