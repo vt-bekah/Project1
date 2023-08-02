@@ -15,9 +15,12 @@ Our client wants to know which cities or regions have the highest potential for 
  - Population trends across target cities (*Cory* to update - be more specific than starter text; add more bullets if needed)
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html, Census Data Wrapper: https://pypi.org/project/census/
    - Notebook(s) / Contributor(s): full_population_analysis.ipynb / Cory Selzer
- - Property value trends across target cities (*Aaron* to update - be more specific than starter text; add more bullets if needed)
-   - Data Source(s):
-   - Notebook(s) / Contributor(s):
+ - Sales trends across target cities 
+   - Data Source(s):https://www.attomdata.com/
+   - Notebook(s) / Contributor(s):sales_trend.ipynb / Aaron Summers & Rebekah Aldrich
+   - Houses Available
+   - Data Source(s):https://www.attomdata.com/
+   - Notebook(s) / Contributor(s):house.ipynb / Aaron Summers & Rebekah Aldrich
  - Are rental prices growing, if so where is best?
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html
    - Notebook(s) / Contributor(s): Rent_Pricing.ipynb / Rebekah Aldrich
