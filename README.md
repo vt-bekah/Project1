@@ -162,6 +162,14 @@ Output: conda 23.5.0
 $ pip --verison
 Ouput: pip 23.1.2 from /Users/{#Username}/opt/anaconda3/lib/site-packages/pip (python 3.10)
 ```
+**If executing certain notebooks, you will need to create a config.py file with API keys as indicated in the notebooks:**
+
+If running the house or sales_trend notebook, you must get an ATTOM API key:
+> https://api.developer.attomdata.com/signup
+
+If running the full_population_analysis, you must get a Census API key
+> https://www.census.gov/data/developers/guidance/api-user-guide.html
+
 
 ### Cloning Repo, Installing Dependencies & Running Jupyter
 ```
