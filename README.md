@@ -12,7 +12,7 @@ Our client wants to know which cities or regions have the highest potential for 
    - Is the city attracting starter home families? school performance, low crime rates, positive job market
 
 ## Key Questions, Answered, Data Source, Notebook
- - Population trends across target cities (*Cory* to update - be more specific than starter text; add more bullets if needed)
+ - Population trends across target cities 
    - Data Source(s): Census Python API: https://www.census.gov/data/developers/guidance/api-user-guide.html, Census Data Wrapper: https://pypi.org/project/census/
    - Notebook(s) / Contributor(s): full_population_analysis.ipynb / Cory Selzer
  - Sales trends across target cities 
@@ -20,7 +20,7 @@ Our client wants to know which cities or regions have the highest potential for 
    - Getting an api_key for Attom got to: https://api.developer.attomdata.com/signup
 Create and account, for company I put UofT Bootcamp and for industry put other. 
    - Notebook(s) / Contributor(s):sales_trend.ipynb / Aaron Summers & Rebekah Aldrich
-   - Houses Available
+ - Houses Available
    - Data Source(s):https://www.attomdata.com/
    - Notebook(s) / Contributor(s):house.ipynb / Aaron Summers & Rebekah Aldrich
  - Are rental prices growing, if so where is best?
@@ -59,11 +59,10 @@ Denver Highlights:
  - Key Factors:
    - 3rd in population growth
    - 3rd in potential profitability (rental prices outpacing ownership prices)
-   - ??? housing market trends
  - Other Considerations for city attractiveness:
     - 1st in job market outlook (combined unemployment and job openings)
     - 2nd in graduation rates
-    - MAYBE lowest in crime rates
+    - Lowest amount of crime and crime rate
 
 **Next Steps**
  - With reduced city list, further dig into city vs. suburb (zip codes), specific schools
@@ -86,7 +85,7 @@ As shown in the charts, the New York City urbanized area grew the most in terms 
  - Memphis is the only city that showed a population decrease.
 
 ![BLS:](./output_data/Full_Popluation_Growth.png)
-### Property... 
+### House Sales Trends 
 **Data**: We looked into the sales trends and houses avaliable with these parameters for both,1-3 bedrooms, square foot max of 1500 sq. ft, and are zoned residential. Sales trends captured sales in a range from 1/1/2020-12/31/2022 with the other given parameters above.
 House data looked at house in those 6 cities within our parameters and told us at this time no houses are available.
 
@@ -98,7 +97,9 @@ House data looked at house in those 6 cities within our parameters and told us a
  - Median Monthly Owner Costs are interpreted to be mortgage and utilities combined. A compare between Median Gross Rent and Median Monthly Owner Costs serve as a proxy for evaluation growth rates of Rent Cost vs. Mortgage Costs. 
  - Median Home Value was evaluated for growth over time to identify potential profitability of re-selling in the future.<br> 
 
-**Results:** 
+**Note:** This data is not limited to starter homes as that was not found readily available for free.
+
+**Results**: 
 A single city does not stand out as top across all the views created. However, San Francisco consistently is the top consideration while other cities fluctiate in rankings. Chicago comes up positively in two of the three views. Denver also shows up positively in two of the three views, but not as strongly as Chicago.
 
 Austin and Chicago show the most growth in home value while Memphis and San Francisco are in the next grouping.
@@ -109,9 +110,9 @@ Chicago and San Francisco have the highest % change in rental values with Austin
 ![BLS: 2020-2022 Unemployment Rates](./output_data/ConRentChange.png)  |  ![BLS: 2020-2022 Job Opening Rates](./output_data/RentMortValChange.png)
 
 ### Comparison of School Graduation Rate Percentages by City
-**Data** Graduation rates were used because we were able to acquire free school rating data that would be utilized on websites like Zillow, RedFin, etc. However, this data may be considered less accurate than other measures such as comparing performance on standardized tests. For the sake of this project and time, we utilimately decided on school graduation rate percentages.
+**Data**: Graduation rates were used because we were able to acquire free school rating data that would be utilized on websites like Zillow, RedFin, etc. However, this data may be considered less accurate than other measures such as comparing performance on standardized tests. For the sake of this project and time, we utilimately decided on school graduation rate percentages.
 
-**Results**
+**Results**:
 As seen in the data, Austin schools have the best graduation rate percentages, followed by Denver schools.
  - Austin shows the highest percentages over the 3 years which would make it the top choice in terms of schools in our investment search.
  - Overall, it is good to see all the cities we are evaluating have promising statistics in terms graduation rate percentages.
@@ -127,10 +128,15 @@ Austin Graduation Rates Stats | Denver Graduation Rates Stats
 ![BLS: 2019-2021 Graduation Rate Percentages](./output_data/SchoolGradRate.png)
 
 ### Crime Rates
-From the information gathered from each cities respective files, Denver currently is showing to be the lowest in terms of total crime in the cities for the years between 2020-2022. However, the amount of crime is shown to be increasing over that three year span. Austin, the next city with the lowest amount of crime, is trending downwards for the total amount. This shows true with Total Crime Rate as well. In conclusion, Denver, followed by Austin and Memphis, are the lowest in terms of Total Crimes per 100,000 people. However, of the three cities listed prior, Austin is the only city trending downward in terms of total crime and crime rate.
+**Data**: From the information gathered from each cities respective files from official city resources. The data includes dates, times, and descriptions of crimes, amongst other information. As each city and state is different, each .csv file had empty spaces as well as information that wasn't included in other cities, such as beats in NYC.
+
+**Results**: In conclusion, Denver, followed by Austin and Memphis, are the lowest in terms of Total Crimes. Denver is the lowest amount of crime, but is increasing year after year. It is still the lowest of all of the cities. Chicago and New York City showed to be the highest amounts, with Chicago taking the top spot.
+
+![BLS:](./output_data/totalcrimebarchart.png)
+
 
 ### Job Market
-**Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm)). The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas. The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level.<br>
+**Data:** Local Area Unemployment Rates & Job Openings Rates from 2020 through 2022 for target cities gathered through U.S. Bureau of Labor Statistics API ([list of Series IDs](https://www.bls.gov/help/hlpforma.htm)). The Local Area Unemployment Statistics (LAUS) program is a federal-state cooperative effort in which monthly estimates of total employment and unemployment are prepared for over 7,600 local areas. The job openings rate is computed by dividing the number of job openings by the sum of employment and job openings and multiplying that quotient by 100 at sate level. Note that the job openings data was not available by state not by city so I used state as the proxy.<br>
 
 **Results:**
 Considering both local unemployment rates and state job opening rates, Denver Colorado has the best performance out of the target cities. ANOVA and T tests were completed to verify differences seen within the charts.
@@ -175,63 +181,3 @@ $ jupyter lab
 - [Scipy](https://scipy.org/) - Python module for statistics
 
 
-
-# SECTION TO BE REMOVED AFTER THE ABOVE CONTAINS SOURCES :Data Sources 
-**target cities are a must:** will alter city list if gap in available data  
-**over time:** last 2-3 years? monthly?  
-**bonus:** across US to pull high/low for potential other places of interest to call out for client  
-
-0. Overall
-     * **Is there an API?** Stats about all US cities - real estate, relocation info, crime, house prices, schools, races, income, photos, sex offenders, maps, education, weather, home value estimator, recent sales, etc. https://www.city-data.com/ 
-1. Real Estate (property sales - qty & $)
-     * **API** Property Data API: https://www.attomdata.com/solutions/property-data-api/  
-     * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
-     * **API** Housing Prices: https://blog.data.nasdaq.com/api-for-housing-data  
-     * **API** Realtor API: http://realtor.com/
-2. Population (growth over time; specific economics?)
-     * **API** Census Population Estimates and Projections: https://www.census.gov/data/developers/data-sets/popest-popproj.html  
-     * **API** Census Migration Flows: https://www.census.gov/data/developers/data-sets/acs-migration-flows.html
-     * **API** FRED: https://pypi.org/project/fredapi/       
-3. Job Market (unemployment, top job types, bonus: job openings?)
-     * **API** Census Economic Indicators: https://www.census.gov/data/developers/data-sets/economic-indicators.html  
-     * **data** 2019 unemployment rates of 50 largest cities: https://www.bls.gov/lau/lacilg19.htm  
-     * **API** US Bureau of Labor Statistics: https://www.bls.gov/developers/home.htm
-       * doc: pull (id) options: https://www.bls.gov/help/hlpforma.htm#LA
-       * doc: location codes: https://download.bls.gov/pub/time.series/la/la.area
-4. Tax Rates (Property, Income?, Sales?)  
-     * ~~Avg 2023 State Property Taxes varies by source: https://www.rocketmortgage.com/learn/property-taxes-by-state, https://belonghome.com/blog/property-taxes-by-state, https://wallethub.com/edu/states-with-the-highest-and-lowest-property-taxes/11585, https://www.bankrate.com/real-estate/property-tax-by-state/#what-are~~
-     * **data** GitHub link for Tax Foundation data: https://github.com/TaxFoundation
-       * **data** 2023 State Tax Collections per Capita: https://taxfoundation.org/2023-state-tax-data/
-       * **data** 2023 Combined State + Local sales tax rates by state: https://taxfoundation.org/publications/state-and-local-sales-tax-rates/  
-       * **data** Property tax trend by state 2020-23: https://taxfoundation.org/ranking-property-taxes-2023/
-       * **data** 2023 Income tax rates by state: https://taxfoundation.org/state-income-tax-rates-2023/  
-     * **API** (free trial option) Nationwide Proprty Tax Reporting: https://dna.firstam.com/taxsource 
-5. Crime Rates (Violent vs. Property)
-     * **API** Worldwide: https://www.crimeometer.com/crime-data-api 
-     * **data** Austin: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu 
-     * **data** San Francisco: https://datasf.org/opendata/
-     * **data** Denver: https://www.denvergov.org/opendata
-     * **Issue! data** Pittsburgh: https://pittsburghpa.gov/open-data/stories.html
-     * **Issue! data** Las Vegas: https://files.lasvegasnevada.gov/open-data/Open_Data_Guide_for_CLV__ODSC_Approved_.pdf  
-     * **data** Memphis: https://data.memphistn.gov/browse?limitTo=datasets  
-     * **data** New York: https://data.cityofnewyork.us/Public-Safety/NYC-crime/qb7u-rbmr
-     * **data** Chicago: https://data.cityofchicago.org/Public-Safety/Crimes-2022/9hwr-2zxp/data  
-     * ...
-6. Potentially add school district ratings
-     * **API** Realtor API: https://www.realtor.com/
-     * **API** https://www.greatschools.org/api/
-7. Other potential
-     * Areas with populations of 65,000+. Covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. https://www.census.gov/data/developers/data-sets/acs-1year.html  
-     * High-level detailed tables tabulated on the 1-year microdata for geographies with populations of 20,000 or more. https://www.census.gov/data/developers/data-sets/ACS-supplemental-data.html 
-     * ChatGPT suggesting realtor:
-        * Zillow API: Zillow, a popular online real estate marketplace, offers APIs that provide access to property data, home values, rental information, and more.
-        * Realtor API: Realtor.com's API provides access to real estate listings, property details, photos, and local market trends.
-        * Redfin API: Redfin's API offers access to real estate listings, property details, and local market information, including home sale data and pricing trends.
-        * Trulia API: Trulia, another prominent online real estate platform, provides APIs that offer access to property data, neighborhood details, and local market trends.
-        * MLS (Multiple Listing Service) API: MLS APIs are offered by various local real estate boards and associations, providing access to real-time property listings, sales data, and more.
-        * Estated API: Estated provides APIs for property data, including property details, ownership information, and historical sales data.
-        * Walk Score API: Walk Score offers an API that provides walkability scores and neighborhood information to assess the accessibility and convenience of different locations.
-        * Attom Data Solutions API: Attom Data Solutions provides APIs that offer access to a wide range of real estate data, including property details, ownership information, mortgage data, and more.
-        * RentRange API: RentRange's API focuses on rental market data, including rental rates, vacancy rates, and rental market trends.
-        * Onboard Informatics API: Onboard Informatics provides APIs that offer access to various real estate data, including property details, neighborhood demographics, and local amenities       
-     * Report on Taxes across US (not per city): chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.lincolninst.edu/sites/default/files/pubfiles/50-state-property-tax-comparison-for-2016-full.pdf               
